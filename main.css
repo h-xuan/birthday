@@ -61,6 +61,15 @@ html, body {
 	margin-top: 7%;
 }
 
+.resize{
+	width: 111px;
+	height: 68px;
+	background: url(resizebubble.png);
+	position: absolute;
+	top: 16%;
+	left: 2%;
+}
+
 
 .quill{
 	width: 350px;
@@ -369,6 +378,7 @@ html, body {
   position: relative;
   transition: all 5s ease-in-out;
   color: #555;
+  font-family: Segoe UI, sans-serif;
 
 }
 .popup .close {
@@ -379,7 +389,7 @@ html, body {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: #333;
 }
 .popup .close:hover {
   color: #91ccbd;
@@ -399,7 +409,6 @@ html, body {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
   text-align: center;
   color: #444;
 }
