@@ -70,6 +70,14 @@ html, body {
 	left: 2%;
 }
 
+.pressbutt{
+	width: 133px;
+	height: 91px;
+	background: url(pressbutt.png);
+	position: absolute;
+	top: 15%;
+	left: -2%;
+}
 
 .quill{
 	width: 350px;

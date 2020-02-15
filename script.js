@@ -10,6 +10,9 @@ $(document).ready(function(){
 
 	setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 
+	$(".resize").delay(2000).fadeOut();
+	$(".pressbutt").hide();
+	$(".pressbutt").delay(3000).fadeIn();
 	$(".climb_boi").hide();
 	$(".climb_one").hide();
 	$(".climb_two").hide();
@@ -23,6 +26,7 @@ $(document).ready(function(){
 
 	$(".pulsestart").click(function(){
 		$(this).hide();
+		$(".pressbutt").fadeOut();
 		$(".climb_boi").show();
 		$(".pulseone").delay(500).show(0);
 	});
