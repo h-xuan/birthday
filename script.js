@@ -1,18 +1,11 @@
 
 $(function() {
   $(window).on("load", function() {
-	if (!sessionStorage.isVisited) {
-	  sessionStorage.isVisited = 'true'
-	  $('.preloader').fadeOut('slow', function() {
+
+
+    $('.preloader').fadeOut('slow', function() {
       $(this).remove();
     });
-	} else {
-	  $(".preloader").hide()
-	}
-
-    // $('.preloader').fadeOut('slow', function() {
-    //   $(this).remove();
-    // });
 
   });
 });
