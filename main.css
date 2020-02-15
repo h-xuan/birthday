@@ -348,6 +348,7 @@ html, body {
 
 }
 
+
 @-webkit-keyframes horn{
 	60%, 100% {background-position: -600px;}
 }
@@ -368,6 +369,17 @@ html, body {
 	left: 14%;
 
 }
+.reload{
+	width: 57px;
+	height: 56px;
+	background: url(reload.png);
+	position: absolute;
+	top: 14%;
+	left: 8%;
+	cursor: pointer;
+	z-index: 1;
+}
+
 
 @-webkit-keyframes float{
 	100% {background-position: -400px;}

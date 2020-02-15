@@ -1,14 +1,14 @@
 
-$(function() {
-  $(window).on("load", function() {
+// $(function() {
+//   $(window).on("load", function() {
 
 
-    $('.preloader').fadeOut('slow', function() {
-      $(this).remove();
-    });
+//     $('.preloader').fadeOut('slow', function() {
+//       $(this).remove();
+//     });
 
-  });
-});
+//   });
+// });
 
 
 $(document).ready(function(){
@@ -32,6 +32,7 @@ $(document).ready(function(){
 	$(".ouch").hide();
 	$(".partyhorn").hide();
 	$(".mail").hide();
+	$(".reload").hide();
 
 	$(".pulsestart").click(function(){
 		$(this).hide();
@@ -89,7 +90,10 @@ $(document).ready(function(){
     "border-top-right-radius": "34px"});
 		$(".eyebrow").css({"top":"-10px"});
 		$(".mail").delay(800).fadeIn();
-
+		$(".reload").delay(800).fadeIn();
+		$('.reload').click(function() {
+    	location.reload();
+});
 	}
 
 
