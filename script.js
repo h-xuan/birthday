@@ -100,8 +100,8 @@ $(document).ready(function(){
 	function normal(){
 		$("#leftbrow").css({"transform":"none"});
 		$("#rightbrow").css({"transform":"none"});
-		$("#lefteye").css({"transform":"none"});
-		$("#righteye").css({"transform":"none"});
+		$("#lefteye").css({"height": "17px","border-radius": "45%"});
+		$("#righteye").css({"height": "17px","border-radius": "45%"});
 		$(".ouch").hide();
 	}
 
