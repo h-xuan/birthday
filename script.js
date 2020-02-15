@@ -6,6 +6,7 @@ $(function() {
     $('.preloader').fadeOut('slow', function() {
       $(this).remove();
     });
+    setTimeout(function(){$('.preloader').remove();}, 10000);
   });
 });
 
@@ -13,7 +14,7 @@ $(function() {
 $(document).ready(function(){
 
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
-	$(".preloader").delay(1000).fadeOut("slow");
+	// $(".preloader").delay(1000).fadeOut("slow");
 
 	$(".resize").delay(3000).fadeOut();
 	$(".pressbutt").hide();
