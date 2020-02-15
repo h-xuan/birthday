@@ -6,13 +6,15 @@ $(function() {
     });
   });
 });
+
+
 $(document).ready(function(){
 
 	setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 
-	$(".resize").delay(2000).fadeOut();
+	$(".resize").delay(3000).fadeOut();
 	$(".pressbutt").hide();
-	$(".pressbutt").delay(3000).fadeIn();
+	$(".pressbutt").delay(4000).fadeIn();
 	$(".climb_boi").hide();
 	$(".climb_one").hide();
 	$(".climb_two").hide();
