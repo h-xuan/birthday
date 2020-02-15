@@ -69,7 +69,7 @@ $(document).ready(function(){
 	});
 
 	function restart(){
-
+		normal();
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 	// $(".preloader").delay(1000).fadeOut("slow");
 	$(".pulsestart").show();
@@ -88,7 +88,7 @@ $(document).ready(function(){
 	$(".partyhorn").hide();
 	$(".mail").hide();
 	$(".reload").hide();
-	normal();
+
 
 	}
 
@@ -100,6 +100,8 @@ $(document).ready(function(){
 	function normal(){
 		$("#leftbrow").css({"transform":"none"});
 		$("#rightbrow").css({"transform":"none"});
+		$("#lefteye").css({"transform":"none"});
+		$("#righteye").css({"transform":"none"});
 		$(".ouch").hide();
 	}
 
