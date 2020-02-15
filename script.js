@@ -13,7 +13,7 @@ $(function() {
 
 $(document).ready(function(){
 
-	
+	function restart(){
 
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 	// $(".preloader").delay(1000).fadeOut("slow");
@@ -65,6 +65,8 @@ $(document).ready(function(){
 		
 	});
 
+	}
+
 	function angry(){
 		$("#leftbrow").css({"transform":"rotate(20deg)"});
 		$("#rightbrow").css({"transform":"rotate(-20deg)"});
@@ -92,11 +94,11 @@ $(document).ready(function(){
 		$(".mail").delay(800).fadeIn();
 		$(".reload").delay(800).fadeIn();
 		$('.reload').click(function() {
-    	location.reload();
+    	restart();
 });
 	}
 
-
+	restart();
 });
 
 
