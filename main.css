@@ -1,0 +1,135 @@
+/*body {
+  position: relative;
+}
+
+.wrapper{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.eye-group {
+  width: 230px;
+  height: 50px;
+  top: 350px;
+  left: 270px;
+  position: absolute;
+}
+.eye {
+  background-color: #a3a48a;
+  width: 45px;
+  height: 20px;
+  border-radius: 45%;
+  position: absolute;
+}
+.eye-left {
+  left: 15px;
+}
+.eye-right {
+  right: 15px;
+}*/
+
+html, body {
+	/*background-image: linear-gradient(#d9faf5, #6da39b);*/
+	background-image: linear-gradient(#a8ffe6, #4ea38b);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   overflow: hidden;
+}
+
+.wrapper {
+	height:100%;
+   width: 50%;
+   margin: auto;
+   padding: 0;
+   border: 0;
+   overflow: hidden;
+}
+
+.statue{
+	width: 560px;
+	height: 650px;
+	background: url(teststatue.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	margin: auto;
+	margin-top: 7%;
+}
+
+
+.quill{
+	width: 350px;
+	height: 150px;
+	background: url(quill_small.png);
+	animation: swing 4s steps(5) infinite;
+	position: absolute;
+	top: 16%;
+	left: 61%;
+
+}
+
+@keyframes swing{
+	20%, 100% {background-position: -1750px;}
+}
+
+
+.eye-group {
+  width: 180px;
+  height: 50px;
+  top: 220px;
+  left: 130px;
+  position: relative;
+}
+.eye {
+  background-color: #a3a48a;
+  width: 34px;
+  height: 18px;
+  border-radius: 45%;
+  position: absolute;
+  animation: blink 8s infinite;
+}
+@keyframes blink{
+	0%, 100% {
+        transform: scale(1, .05);
+    }
+    3%,
+    97% {
+        transform: scale(1, 1);
+    }
+}
+.eye-left {
+  left: 15px;
+}
+.eye-right {
+  right: 15px;
+}
+
+.eyebrow{
+	background-color: #727272;
+  width: 37px;
+  height: 10px;
+  top: -8px;
+  border-radius: 35%;
+  position: absolute;
+}
+
+
+
+
+/****** MEDIA ********/
+@media (max-width: 768px) {
+
+.statue{
+	background: url(teststatue.png) no-repeat center;
+	background-size: cover;
+	margin: auto;
+	margin-top: 30%;
+}
+
+
+}
