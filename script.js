@@ -8,7 +8,7 @@ $(function() {
 });
 $(document).ready(function(){
 
-
+	$('.preloader').hide();
 	$(".climb_boi").hide();
 	$(".climb_one").hide();
 	$(".climb_two").hide();
@@ -73,6 +73,8 @@ $(document).ready(function(){
 	"width": "34px",
 	"border-top-left-radius": "34px",
     "border-top-right-radius": "34px"});
+		$(".eyebrow").css({"top":"-10px"});
+
 	}
 
 

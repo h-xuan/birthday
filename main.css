@@ -313,7 +313,7 @@ html, body {
 	width: 300px;
 	height: 200px;
 	background: url(partyhorn.png);
-	animation: horn 4s steps(2) infinite;
+	animation: horn 3s steps(2) infinite;
 	position: absolute;
 	top: 40%;
 	left: -13%;
@@ -321,7 +321,7 @@ html, body {
 }
 
 @keyframes horn{
-	50%, 100% {background-position: -600px;}
+	60%, 100% {background-position: -600px;}
 }
 
 
