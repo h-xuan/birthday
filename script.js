@@ -88,6 +88,7 @@ $(document).ready(function(){
 	$(".partyhorn").hide();
 	$(".mail").hide();
 	$(".reload").hide();
+	normal();
 
 	}
 
