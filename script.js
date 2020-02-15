@@ -13,9 +13,12 @@ $(document).ready(function(){
 	$(".climb_one").hide();
 	$(".climb_two").hide();
 	$(".climb_three").hide();
+	$(".climb_top").hide();
 	$(".pulseone").hide();
 	$(".pulsetwo").hide();
 	$(".pulsethree").hide();
+	$(".ouch").hide();
+	$(".partyhorn").hide();
 
 	$(".pulsestart").click(function(){
 		$(this).hide();
@@ -34,6 +37,8 @@ $(document).ready(function(){
 		$(this).hide();
 		$(".climb_one").hide();
 		$(".climb_two").show();
+		setTimeout(angry, 800);
+		setTimeout(normal, 1600);
 		$(".pulsethree").delay(1800).show(0);
 	});
 
@@ -41,6 +46,37 @@ $(document).ready(function(){
 		$(this).hide();
 		$(".climb_two").hide();
 		$(".climb_three").show();
+		setTimeout(reachTop, 2400);
 		
 	});
+
+	function angry(){
+		$("#leftbrow").css({"transform":"rotate(20deg)"});
+		$("#rightbrow").css({"transform":"rotate(-20deg)"});
+		$(".ouch").show();
+	}
+	function normal(){
+		$("#leftbrow").css({"transform":"none"});
+		$("#rightbrow").css({"transform":"none"});
+		$(".ouch").hide();
+	}
+
+	function reachTop(){
+		$(".climb_three").hide();
+		$(".climb_top").show();
+		$(".partyhorn").show();
+		$("#lefteye").css({"height": "17px",
+	"width": "34px",
+	"border-top-left-radius": "34px",
+    "border-top-right-radius": "34px"});
+		$("#righteye").css({"height": "17px",
+	"width": "34px",
+	"border-top-left-radius": "34px",
+    "border-top-right-radius": "34px"});
+	}
+
+
 });
+
+
+

@@ -119,6 +119,25 @@ html, body {
 }
 
 
+.eyesmile{
+	height: 17px;
+	width: 34px;
+	border-top-left-radius: 34px;
+    border-top-right-radius: 34px;
+
+}
+
+
+.ouch{
+	width: 47px;
+	height: 84px;
+	background: url(ouch.png);
+	position: absolute;
+	top: 16%;
+	left: 11%;
+}
+
+
 .pulse {
   margin:100px;
   display: block;
@@ -273,39 +292,40 @@ html, body {
     to { background-position: -6370px; }
 }
 
-
-
-
-/***** PRELOADER ******/
-/*.spinner {
-  width: 40px;
-  height: 40px;
-  margin: 100px auto;
-  background-color: #333;
-
-  border-radius: 100%;  
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
+.climb_top {
+	width: 200px;
+	height: 200px;
+	background: url(climbtop.png);
+	animation: climbtop 3s steps(6) infinite;
+	position: absolute;
+	top: -8%;
+	left: 29%;
+}
+@keyframes climbtop{
+	20%, 100% {background-position: -1200px;}
+/*	from { background-position: 0; }
+    to { background-position: -1200px; }*/
 }
 
-@-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
-  100% {
-    -webkit-transform: scale(1.0);
-    opacity: 0;
-  }
+
+
+.partyhorn{
+	width: 300px;
+	height: 200px;
+	background: url(partyhorn.png);
+	animation: horn 4s steps(2) infinite;
+	position: absolute;
+	top: 40%;
+	left: -13%;
+
 }
 
-@keyframes sk-scaleout {
-  0% { 
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  } 100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-    opacity: 0;
-  }
-}*/
+@keyframes horn{
+	50%, 100% {background-position: -600px;}
+}
+
+
+
 .preloader {
    position: absolute;
    top: 0;
