@@ -1,14 +1,14 @@
 
-// $(function() {
-//   $(window).on("load", function() {
+$(function() {
+  $(window).on("load", function() {
 
 
-//     $('.preloader').fadeOut('slow', function() {
-//       $(this).remove();
-//     });
+    $('.preloader').fadeOut('slow', function() {
+      $(this).remove();
+    });
 
-//   });
-// });
+  });
+});
 
 
 $(document).ready(function(){
