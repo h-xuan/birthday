@@ -5,6 +5,8 @@ $(function() {
 
     $('.preloader').fadeOut('slow', function() {
       $(this).hide();
+      $(".resize").delay(2000).fadeOut();
+      $(".pressbutt").delay(3000).fadeIn();
     });
 
   });
@@ -17,9 +19,9 @@ $(document).ready(function(){
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 	// $(".preloader").delay(1000).fadeOut("slow");
 	$(".pulsestart").show();
-	$(".resize").delay(3000).fadeOut();
+	// $(".resize").delay(3000).fadeOut();
 	$(".pressbutt").hide();
-	$(".pressbutt").delay(4000).fadeIn();
+	// $(".pressbutt").delay(4000).fadeIn();
 	$(".climb_boi").hide();
 	$(".climb_one").hide();
 	$(".climb_two").hide();
