@@ -8,7 +8,8 @@ $(function() {
 });
 $(document).ready(function(){
 
-	$('.preloader').hide();
+	setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
+
 	$(".climb_boi").hide();
 	$(".climb_one").hide();
 	$(".climb_two").hide();
