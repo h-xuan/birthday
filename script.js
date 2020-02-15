@@ -1,14 +1,18 @@
 $(document).ready(function(){
 
-	$("#moving").hide();
+	$(".climb_boi").hide();
+	$(".climb_one").hide();
+	$(".pulseone").hide();
 
-	$("p").click(function(){
+	$(".pulsestart").click(function(){
 		$(this).hide();
-		$("#showp").show();
+		$(".climb_boi").show();
+		$(".pulseone").delay(500).show(0);
 	});
 
-	$("#idle").click(function(){
+	$(".pulseone").click(function(){
 		$(this).hide();
-		$("#moving").show();
+		$(".climb_boi").hide();
+		$(".climb_one").show();
 	});
 });
