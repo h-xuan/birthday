@@ -13,7 +13,7 @@ $(function() {
 $(document).ready(function(){
 
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
-	$(".preloader").fadeOut("slow");
+	$(".preloader").delay(1000).fadeOut("slow");
 
 	$(".resize").delay(3000).fadeOut();
 	$(".pressbutt").hide();
