@@ -1,17 +1,26 @@
 
 $(function() {
   $(window).on("load", function() {
-
-    
-    $('.preloader').fadeOut('slow', function() {
+	if (!sessionStorage.isVisited) {
+	  sessionStorage.isVisited = 'true'
+	  $('.preloader').fadeOut('slow', function() {
       $(this).remove();
     });
-    setTimeout(function(){$('.preloader').remove();}, 10000);
+	} else {
+	  $(".preloader").hide()
+	}
+
+    // $('.preloader').fadeOut('slow', function() {
+    //   $(this).remove();
+    // });
+
   });
 });
 
 
 $(document).ready(function(){
+
+	
 
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 	// $(".preloader").delay(1000).fadeOut("slow");
