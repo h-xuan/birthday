@@ -62,12 +62,12 @@ html, body {
 }
 
 .resize{
-	width: 111px;
-	height: 68px;
+	width: 138px;
+	height: 84px;
 	background: url(resizebubble.png);
 	position: absolute;
-	top: 16%;
-	left: 2%;
+	top: 14%;
+	left: -3%;
 }
 
 .pressbutt{
@@ -339,6 +339,22 @@ html, body {
 
 @keyframes horn{
 	60%, 100% {background-position: -600px;}
+}
+
+
+.mail{
+	width: 100px;
+	height: 100px;
+	background: url(mail.png);
+	animation: float 1s steps(4) infinite;
+	position: absolute;
+	top: 3%;
+	left: 14%;
+
+}
+
+@keyframes float{
+	100% {background-position: -400px;}
 }
 
 

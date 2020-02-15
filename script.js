@@ -23,6 +23,7 @@ $(document).ready(function(){
 	$(".pulsethree").hide();
 	$(".ouch").hide();
 	$(".partyhorn").hide();
+	$(".mail").hide();
 
 	$(".pulsestart").click(function(){
 		$(this).hide();
@@ -79,6 +80,7 @@ $(document).ready(function(){
 	"border-top-left-radius": "34px",
     "border-top-right-radius": "34px"});
 		$(".eyebrow").css({"top":"-10px"});
+		$(".mail").delay(800).fadeIn();
 
 	}
 
