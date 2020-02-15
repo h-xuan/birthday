@@ -4,7 +4,7 @@ $(function() {
 
 
     $('.preloader').fadeOut('slow', function() {
-      $(this).remove();
+      $(this).hide();
     });
 
   });
