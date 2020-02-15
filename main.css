@@ -340,6 +340,71 @@ html, body {
 }
 
 
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 30px auto;
+  padding: 20px;
+  background: url(letterbase.png) no-repeat center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: #555;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: #91ccbd;
+}
+.popup .content {
+  overflow: auto;
+  width: 80%;
+  margin: auto;
+
+}
+.popup .content_eng {
+  overflow: auto;
+  width: 80%;
+  margin: auto;
+  font-size: 0.8em;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  color: #444;
+}
+
+
 /****** MEDIA ********/
 @media (max-width: 768px) {
 
