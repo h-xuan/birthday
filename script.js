@@ -29,14 +29,14 @@ $(document).ready(function(){
 		$(this).hide();
 		$(".pressbutt").fadeOut();
 		$(".climb_boi").show();
-		$(".pulseone").delay(500).show(0);
+		$(".pulseone").delay(500).fadeIn();
 	});
 
 	$(".pulseone").click(function(){
 		$(this).hide();
 		$(".climb_boi").hide();
 		$(".climb_one").show();
-		$(".pulsetwo").delay(1200).show(0);
+		$(".pulsetwo").delay(1200).fadeIn();
 	});
 
 	$(".pulsetwo").click(function(){
@@ -45,7 +45,7 @@ $(document).ready(function(){
 		$(".climb_two").show();
 		setTimeout(angry, 800);
 		setTimeout(normal, 1600);
-		$(".pulsethree").delay(1800).show(0);
+		$(".pulsethree").delay(1800).fadeIn();
 	});
 
 	$(".pulsethree").click(function(){
