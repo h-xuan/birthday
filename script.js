@@ -13,11 +13,10 @@ $(function() {
 
 $(document).ready(function(){
 
-	function restart(){
 
 	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
 	// $(".preloader").delay(1000).fadeOut("slow");
-
+	$(".pulsestart").show();
 	$(".resize").delay(3000).fadeOut();
 	$(".pressbutt").hide();
 	$(".pressbutt").delay(4000).fadeIn();
@@ -36,6 +35,7 @@ $(document).ready(function(){
 
 	$(".pulsestart").click(function(){
 		$(this).hide();
+		$(".pulsestart").hide();
 		$(".pressbutt").fadeOut();
 		$(".climb_boi").show();
 		$(".pulseone").delay(500).fadeIn();
@@ -43,6 +43,7 @@ $(document).ready(function(){
 
 	$(".pulseone").click(function(){
 		$(this).hide();
+		$(".pulseone").hide();
 		$(".climb_boi").hide();
 		$(".climb_one").show();
 		$(".pulsetwo").delay(1200).fadeIn();
@@ -50,6 +51,7 @@ $(document).ready(function(){
 
 	$(".pulsetwo").click(function(){
 		$(this).hide();
+		$(".pulsetwo").hide();
 		$(".climb_one").hide();
 		$(".climb_two").show();
 		setTimeout(angry, 800);
@@ -59,11 +61,33 @@ $(document).ready(function(){
 
 	$(".pulsethree").click(function(){
 		$(this).hide();
+		$(".pulsethree").hide();
 		$(".climb_two").hide();
 		$(".climb_three").show();
 		setTimeout(reachTop, 2400);
 		
 	});
+
+	function restart(){
+
+	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
+	// $(".preloader").delay(1000).fadeOut("slow");
+	$(".pulsestart").show();
+	$(".resize").delay(3000).fadeOut();
+	$(".pressbutt").hide();
+	$(".pressbutt").delay(4000).fadeIn();
+	$(".climb_boi").hide();
+	$(".climb_one").hide();
+	$(".climb_two").hide();
+	$(".climb_three").hide();
+	$(".climb_top").hide();
+	$(".pulseone").hide();
+	$(".pulsetwo").hide();
+	$(".pulsethree").hide();
+	$(".ouch").hide();
+	$(".partyhorn").hide();
+	$(".mail").hide();
+	$(".reload").hide();
 
 	}
 
@@ -98,7 +122,6 @@ $(document).ready(function(){
 });
 	}
 
-	restart();
 });
 
 
