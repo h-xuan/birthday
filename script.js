@@ -6,14 +6,14 @@ $(function() {
     $('.preloader').fadeOut('slow', function() {
       $(this).remove();
     });
-    $('body').toggleClass('loaded');
   });
 });
 
 
 $(document).ready(function(){
 
-	setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
+	// setTimeout(function(){ $('#preloader').fadeOut() }, 1500);
+	$(".preloader").fadeOut("slow");
 
 	$(".resize").delay(3000).fadeOut();
 	$(".pressbutt").hide();
