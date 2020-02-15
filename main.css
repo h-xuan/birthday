@@ -129,6 +129,7 @@ html, body {
   cursor: pointer;
   box-shadow: 0 0 0 rgba(204,169,44, 0.4);
   animation: pulse 2s infinite;
+  z-index: 1;
 }
 
 @-webkit-keyframes pulse {
@@ -170,6 +171,7 @@ html, body {
   position: absolute;
   top: 55%;
   left: 20%;
+  z-index: 1;
 }
 
 @-webkit-keyframes pulse {
@@ -204,6 +206,18 @@ html, body {
 	left: 33%;
 	top: 35%;
 }
+.pulsetwo {
+	position: absolute;
+	left: 41%;
+	top: 18%;
+	z-index:1;
+}
+.pulsethree {
+	position: absolute;
+	left: 26%;
+	top: 2%;
+	z-index:1;
+}
 
 .climb_boi {
 	width: 245px;
@@ -228,6 +242,73 @@ html, body {
 	from { background-position: 0; }
     to { background-position: -4165px; }
 }
+
+.climb_two {
+	width: 245px;
+	height: 365px;
+	background: url(climb2_small.png);
+	animation: climbtwo 1.5s steps(14) forwards;
+	position: absolute;
+	top: 18%;
+	left: 30%;
+}
+@keyframes climbtwo{
+	/*100% {background-position: -4410px;}*/
+	from { background-position: 0; }
+    to { background-position: -3430px; }
+}
+
+.climb_three {
+	width: 245px;
+	height: 420px;
+	background: url(climb3_small.png);
+	animation: climbthree 2s steps(26) forwards;
+	position: absolute;
+	top: -8%;
+	left: 29%;
+}
+@keyframes climbthree{
+	/*100% {background-position: -4410px;}*/
+	from { background-position: 0; }
+    to { background-position: -6370px; }
+}
+
+
+
+
+/***** PRELOADER ******/
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+
 
 
 /****** MEDIA ********/
